@@ -2,13 +2,5 @@ asgiref
 autopep8
 Django
 django-dotenv
-djlint
-html-tag-names
-html-void-elements
-importlib-metadata
-pathspec
-pycodestyle
-PyYAML==6.0
-regex
 sqlparse
 
