@@ -3,4 +3,4 @@ autopep8
 Django
 django-dotenv
 sqlparse
-
+gunicorn

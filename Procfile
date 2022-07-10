@@ -1,1 +1,1 @@
-web: gunicorn NextGen:app
+web: gunicorn NextGen.wsgi
