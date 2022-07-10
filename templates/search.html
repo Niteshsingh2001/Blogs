@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    Search Result
+    <br>
+    <br>
+    <br>
+    {% if a == "" %}
+        Search Result Not Found
+    {% else %}
+        {{ a.tittle }}
+        <br>
+        {{ a.content }}
+    {% endif %}
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if not request.user.is_authenticated %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {% if error %}<h3 style='color:red;'>{{ error }}</h3>{% endif %}
+        {% if status %}<h3>Hello {{ user }}</h3>{% endif %}
+        <br>
+        <br>
+        <input type="text" name="username" placeholder='username'>
+        <br>
+        <br>
+        <input type="password" name="password" placeholder='password'>
+        <br>
+        <br>
+        <button type="submit">Login</button>
+        <br>
+        <br>
+    </form>
+    {% else %}
+    <h3>Already Loged in </h3>
+
+    {% endif %}
+{% endblock content %}
