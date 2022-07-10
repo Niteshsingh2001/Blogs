@@ -1,1 +1,1 @@
-web: gunicorn NextGen.wsgi
+web: gunicorn devblogshere.wsgi
