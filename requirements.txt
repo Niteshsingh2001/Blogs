@@ -4,5 +4,7 @@ Django
 django-dotenv
 sqlparse
 gunicorn
+whitenoise
+dj-database-url
 
 
