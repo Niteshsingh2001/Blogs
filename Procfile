@@ -1,3 +1,3 @@
-web: gunicorn NextGen.wsgi --log-file -
+web: gunicorn NextGen.wsgi:application --log-file - --log-level debug
 python manage.py collectstatic --noinput
 manage.py migrate
